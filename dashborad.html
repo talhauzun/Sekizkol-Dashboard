@@ -1,0 +1,1337 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Treva - UIKit</title>
+    <!-- HTML5 Shim and Respond.js IE11 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 11]>
+    	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    	<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    	<![endif]-->
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui"> -->
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge" /> -->
+    <meta name="description" content="" />
+    <meta name="keywords" content="">
+    <meta name="author" content="Codedthemes" />
+
+    <!-- Hotjar Tracking Code for http://html.codedthemes.com/treva/bootstrap/index-tf.html -->
+    <script>
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:1628297,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+
+    <!-- Favicon icon -->
+    <link rel="icon" href="theme/images/favicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="theme/css/daterangepicker.css">
+    <!-- vendor css -->
+    <link rel="stylesheet" href="theme/css/style.css">
+    <link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_o5hd5vvqpoqiwwmi.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <script  src="theme/js/vendor-all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js" integrity="sha512-F5QTlBqZlvuBEs9LQPqc1iZv2UMxcVXezbHzomzS6Df4MZMClge/8+gXrKw2fl5ysdk4rWjR0vKS7NNkfymaBQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js" integrity="sha512-7x3zila4t2qNycrtZ31HO0NnJr8kg2VI67YLoRSyi9hGhRN66FHYWr7Axa9Y1J9tGYHVBPqIjSE1ogHrJTz51g==" crossorigin="anonymous"></script>
+</head>
+<body class="">
+	<!-- [ Pre-loader ] start -->
+	<div class="loader-bg">
+		<div class="loader-track">
+			<div class="loader-fill"></div>
+		</div>
+	</div>
+	<!-- [ Pre-loader ] End -->
+	<!-- [ navigation menu ] start -->
+	<nav class="pcoded-navbar dashboard-nav menupos-fixed ">
+		<div class="navbar-wrapper  ">
+			<div class="navbar-content scroll-div " >
+				<ul class="nav pcoded-inner-navbar ">
+					<li class="nav-item pcoded-menu-caption">
+						<label>Dashboard</label>
+					</li>
+					<li class="nav-item"><a href="adm-dashboard.html" class="nav-link "><span class="pcoded-micon"><i class="fas fa-tachometer-alt"></i></span><span class="pcoded-mtext">Dashboard</span></a></li>
+					<li class="nav-item pcoded-hasmenu">
+						<a href="#!" class="nav-link "><span class="pcoded-micon"><i class="fas fa-user-tie"></i></span><span class="pcoded-mtext">Clients</span></a>
+						<ul class="pcoded-submenu">
+							<li><a href="adm-client-card.html">Card</a></li>
+							<li><a href="adm-client-list.html">List</a></li>
+							<li><a href="adm-client-details.html">Details</a></li>
+						</ul>
+					</li>
+					<li class="nav-item pcoded-hasmenu">
+						<a href="#!" class="nav-link "><span class="pcoded-micon"><i class="fas fa-users"></i></span><span class="pcoded-mtext">Teams</span></a>
+						<ul class="pcoded-submenu">
+							<li><a href="adm-teams-card.html">Card</a></li>
+							<li><a href="adm-teams-list.html">List</a></li>
+							<li><a href="adm-teams-details.html">Details</a></li>
+						</ul>
+					</li>
+					<li class="nav-item pcoded-hasmenu">
+						<a href="#!" class="nav-link "><span class="pcoded-micon"><i class="fas fa-user-circle"></i></span><span class="pcoded-mtext">Users</span></a>
+						<ul class="pcoded-submenu">
+							<li><a href="adm-users-card.html">Card</a></li>
+							<li><a href="adm-users-list.html">List</a></li>
+							<li><a href="adm-users-details.html">Details</a></li>
+						</ul>
+					</li>
+					<li class="nav-item pcoded-hasmenu">
+						<a href="#!" class="nav-link "><span class="pcoded-micon"><i class="fas fa-gift"></i></span><span class="pcoded-mtext">Projects</span></a>
+						<ul class="pcoded-submenu">
+							<li><a href="adm-projects-card.html">Card</a></li>
+							<li><a href="adm-projects-list.html">List</a></li>
+							<li><a href="adm-projects-details.html">Details</a></li>
+						</ul>
+					</li>
+					<li class="nav-item pcoded-hasmenu">
+						<a href="#!" class="nav-link "><span class="pcoded-micon"><i class="fas fa-sitemap"></i></span><span class="pcoded-mtext">Integrations</span></a>
+						<ul class="pcoded-submenu">
+							<li><a href="adm-integrations-card.html">Card</a></li>
+							<li><a href="adm-integrations-list.html">List</a></li>
+							<li><a href="adm-integrations-details.html">Details</a></li>
+						</ul>
+					</li>
+					<li class="nav-item pcoded-hasmenu">
+						<a href="#!" class="nav-link "><span class="pcoded-micon"><i class="fas fa-file-invoice"></i></span><span class="pcoded-mtext">Files</span></a>
+						<ul class="pcoded-submenu">
+							<li><a href="adm-files-card.html">Card</a></li>
+							<li><a href="adm-files-list.html">List</a></li>
+						</ul>
+					</li>
+					<li class="nav-item pcoded-hasmenu">
+						<a href="#!" class="nav-link "><span class="pcoded-micon"><i class="fas fa-address-card"></i></span><span class="pcoded-mtext">Profile</span></a>
+						<ul class="pcoded-submenu">
+							<li><a href="adm-profile-public.html">Profile</a></li>
+							<li><a href="adm-profile-edit.html">Edit</a></li>
+							<li><a href="adm-profile-conversations.html">Conversations</a></li>
+							<li><a href="adm-profile-inbox.html">Inbox</a></li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<a href="adm-tasks.html" class="nav-link "><span class="pcoded-micon"><i class="fas fa-clipboard-list"></i></span><span class="pcoded-mtext">Tasks</span></a>
+					</li>
+					<li class="nav-item pcoded-menu-caption">
+						<label>Navigation</label>
+					</li>
+					<li class="nav-item pcoded-hasmenu">
+						<a href="#!" class="nav-link "><span class="pcoded-micon"><i class="fas fa-box"></i></span><span class="pcoded-mtext">Page layouts</span></a>
+						<ul class="pcoded-submenu">
+							<li><a href="layout-vertical.html" target="_blank">Vertical</a></li>
+							<li><a href="layout-horizontal.html" target="_blank">Horizontal</a></li>
+						</ul>
+					</li>
+					<li class="nav-item pcoded-menu-caption">
+						<label>Application</label>
+					</li>
+					<li class="nav-item pcoded-hasmenu">
+						<a href="#!" class="nav-link "><span class="pcoded-micon"><i class="fas fa-file-invoice-dollar"></i></span><span class="pcoded-mtext">Invoice</span></a>
+						<ul class="pcoded-submenu">
+							<li><a href="adm-invoice.html">Invoice</a></li>
+							<li><a href="adm-invoice2.html">Invoice 2</a></li>
+							<li><a href="adm-invoice-summary.html">Invoice Summary</a></li>
+							<li><a href="adm-invoice-list.html">Invoice List</a></li>
+						</ul>
+					</li>
+					<li class="nav-item pcoded-hasmenu">
+						<a href="#!" class="nav-link "><span class="pcoded-micon"><i class="fas fa-envelope-open-text"></i></span><span class="pcoded-mtext">Email</span></a>
+						<ul class="pcoded-submenu">
+							<li><a href="adm-em-inbox.html">Inbox</a></li>
+							<li><a href="adm-em-read.html">Read Mail</a></li>
+							<li><a href="adm-em-compose.html">Compose Mail</a></li>
+						</ul>
+					</li>
+					<li class="nav-item pcoded-menu-caption">
+						<label>Pages</label>
+					</li>
+					<li class="nav-item pcoded-hasmenu">
+						<a href="#!" class="nav-link "><span class="pcoded-micon"><i class="fas fa-fingerprint"></i></span><span class="pcoded-mtext">Authentication</span></a>
+						<ul class="pcoded-submenu">
+							<li><a href="auth-login1.html" target="_blank">Log in 1</a></li>
+							<li><a href="auth-login2.html" target="_blank">Log in 2</a></li>
+							<li><a href="auth-login3.html" target="_blank">Log in 3</a></li>
+							<li><a href="auth-login4.html" target="_blank">Log in 4</a></li>
+							<li><a href="auth-login5.html" target="_blank">Log in 5</a></li>
+							<li><a href="auth-resetpassword1.html" target="_blank">Reset Password 1</a></li>
+							<li><a href="auth-resetpassword2.html" target="_blank">Reset Password 2</a></li>
+							<li><a href="auth-signup1.html" target="_blank">Sign up 1</a></li>
+							<li><a href="auth-signup2.html" target="_blank">Sign up 2</a></li>
+							<li><a href="auth-signup3.html" target="_blank">Sign up 3</a></li>
+							<li><a href="auth-signup4.html" target="_blank">Sign up 4</a></li>
+							<li><a href="auth-signup5.html" target="_blank">Sign up 5</a></li>
+						</ul>
+					</li>
+					<li class="nav-item pcoded-hasmenu">
+						<a href="#!" class="nav-link "><span class="pcoded-micon"><i class="fas fa-paint-roller"></i></span><span class="pcoded-mtext">Maintenance</span></a>
+						<ul class="pcoded-submenu">
+							<li><a href="mat-comingsoon.html" target="_blank">Coming Soon</a></li>
+							<li><a href="mat-error.html" target="_blank">Error 404</a></li>
+							<li><a href="mat-offline.html" target="_blank">Offline</a></li>
+						</ul>
+					</li>
+					<li class="nav-item pcoded-menu-caption">
+						<label>Other</label>
+					</li>
+					<li class="nav-item pcoded-hasmenu">
+						<a href="#" class="nav-link "><span class="pcoded-micon"><i class="fas fa-list-alt"></i></span><span class="pcoded-mtext">Menu levels</span></a>
+						<ul class="pcoded-submenu">
+							<li><a href="#">Menu Level 2.1</a></li>
+							<li class="pcoded-hasmenu">
+								<a href="#">Menu level 2.2</a>
+								<ul class="pcoded-submenu">
+									<li><a href="#">Menu level 3.1</a></li>
+									<li><a href="#">Menu level 3.2</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li class="nav-item disabled"><a href="#!" class="nav-link "><span class="pcoded-micon"><i class="fas fa-power-off"></i></span><span class="pcoded-mtext">Disabled menu</span></a></li>
+					<li class="nav-item"><a href="sample-page.html" class="nav-link "><span class="pcoded-micon"><i class="fas fa-desktop"></i></span><span class="pcoded-mtext">Sample page</span></a></li>
+					<li class="nav-item pcoded-hasmenu">
+						<a href="#" class="nav-link"><span class="pcoded-mtext">Menu levels</span></a>
+						<ul class="pcoded-submenu">
+							<li><a href="#">Menu Level 2.1</a></li>
+							<li class="pcoded-hasmenu">
+								<a href="#">Menu level 2.2</a>
+								<ul class="pcoded-submenu">
+									<li><a href="#">Menu level 3.1</a></li>
+									<li><a href="#">Menu level 3.2</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+
+				</ul>
+				
+				<div class="card text-center">
+					<div class="card-block">
+						<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+						<i class="far fa-life-ring f-40"></i>
+						<h6 class="mt-3">Help?</h6>
+						<p>Please contact us on our email for need any support</p>
+						<a href="#!" target="_blank" class="btn btn-primary btn-sm text-white m-0">Support</a>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</nav>
+	<!-- [ navigation menu ] end -->
+	<!-- [ Header ] start -->
+	<header class="navbar pcoded-header navbar-expand-lg navbar-light headerpos-fixed brand-dark ">
+		
+			
+				<div class="m-header">
+					<a class="mobile-menu" id="mobile-collapse" href="#!"><span></span></a>
+					<a href="index.html" class="b-brand">
+						<!-- ========   change your logo hear   ============ -->
+						
+						
+							<img src="theme/images/logo.svg" alt="" class="logo">
+						
+					</a>
+					<a href="#!" class="mob-toggler">
+						<i class="feather icon-more-vertical"></i>
+					</a>
+				</div>
+				<div class="collapse navbar-collapse">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item">
+							<div class="dropdown">
+								<a class="dropdown-toggle h-drop" href="#" data-toggle="dropdown">
+									<i class="feather icon-monitor mx-2"></i>
+									<span class="d-none d-sm-inline-block">Dashboard</span>
+								</a>
+								<div class="dropdown-menu profile-notification ">
+									<ul class="pro-body">
+										<li><a href="adm-dashboard.html" class="dropdown-item"><i class="fas fa-circle"></i> Dashboard</a></li>
+										<li><a href="adm-client-card.html" class="dropdown-item"><i class="fas fa-circle"></i> Clients</a></li>
+										<li><a href="adm-teams-card.html" class="dropdown-item"><i class="fas fa-circle"></i> Teams</a></li>
+										<li><a href="adm-users-card.html" class="dropdown-item"><i class="fas fa-circle"></i> Users</a></li>
+										<li><a href="adm-projects-card.html" class="dropdown-item"><i class="fas fa-circle"></i> Projects</a></li>
+										<li><a href="adm-integrations-card.html" class="dropdown-item"><i class="fas fa-circle"></i> Integrations</a></li>
+										<li><a href="adm-files-card.html" class="dropdown-item"><i class="fas fa-circle"></i> Files</a></li>
+										<li><a href="adm-profile-edit.html" class="dropdown-item"><i class="fas fa-circle"></i> Profile</a></li>
+										<li><a href="adm-tasks.html" class="dropdown-item"><i class="fas fa-circle"></i> Tasks</a></li>
+										<li><a href="adm-invoice.html" class="dropdown-item"><i class="fas fa-circle"></i> Invoice</a></li>
+										<li><a href="adm-em-inbox.html" class="dropdown-item"><i class="fas fa-circle"></i> Inbox</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="nav-item">
+							<div class="dropdown mega-menu">
+								<a class="dropdown-toggle h-drop" href="#" data-toggle="dropdown">
+									<i class="feather icon-layers mr-2"></i>
+									<span class="d-none d-sm-inline-block">Components</span>
+								</a>
+								<div class="dropdown-menu profile-notification ">
+									<div class="row no-gutters">
+										<div class="col">
+											<h6 class="mega-title">Primitives</h6>
+											<ul class="pro-body">
+												<li><a href="bc-colors.html" class="dropdown-item"><i class="fas fa-circle"></i> Colors</a></li>
+												<li><a href="bc-typography.html" class="dropdown-item"><i class="fas fa-circle"></i> Typography</a></li>
+												<li><a href="bc-richtext.html" class="dropdown-item"><i class="fas fa-circle"></i> Rich Text</a></li>
+												<li><a href="bc-shadows.html" class="dropdown-item"><i class="fas fa-circle"></i> Elevation & Shadows</a></li>
+												<li><a href="bc-border.html" class="dropdown-item"><i class="fas fa-circle"></i> Shapes & Curves</a></li>
+											</ul>
+											<h6 class="mega-title mt-1">Landingpage</h6>
+											<ul class="pro-body">
+												<li><a href="landingpage.html" class="dropdown-item"><i class="fas fa-circle"></i> Landingpage</a></li>
+											</ul>
+											<h6 class="mega-title mt-1">Table</h6>
+											<ul class="pro-body">
+												<li><a href="tbl-bootstrap.html" class="dropdown-item"><i class="fas fa-circle"></i> Bootstrap</a></li>
+												<li><a href="tbl-datatable.html" class="dropdown-item"><i class="fas fa-circle"></i> Datatable</a></li>
+											</ul>
+										</div>
+										<div class="col">
+											<h6 class="mega-title">UI Components</h6>
+											<ul class="pro-body">
+												<li><a href="bc-alerts.html" class="dropdown-item"><i class="fas fa-circle"></i> Alerts</a></li>
+												<li><a href="bc-accordions.html" class="dropdown-item"><i class="fas fa-circle"></i> Accordions</a></li>
+												<li><a href="bc-avatars.html" class="dropdown-item"><i class="fas fa-circle"></i> Avatars</a></li>
+												<li><a href="bc-badges.html" class="dropdown-item"><i class="fas fa-circle"></i> Badges</a></li>
+												<li><a href="bc-breadcrumbs.html" class="dropdown-item"><i class="fas fa-circle"></i> Breadcrumbs</a></li>
+												<li><a href="bc-button.html" class="dropdown-item"><i class="fas fa-circle"></i> Button</a></li>
+												<li><a href="bc-button-group.html" class="dropdown-item"><i class="fas fa-circle"></i> Buttons Groups</a></li>
+												<li><a href="bc-cards.html" class="dropdown-item"><i class="fas fa-circle"></i> Cards</a></li>
+												<li><a href="bc-conversation.html" class="dropdown-item"><i class="fas fa-circle"></i> Conversation</a></li>
+												<li><a href="bc-datepickers.html" class="dropdown-item"><i class="fas fa-circle"></i> Date Pickers</a></li>
+												<li><a href="bc-icons.html" class="dropdown-item"><i class="fas fa-circle"></i> Icons</a></li>
+											</ul>
+										</div>
+										<div class="col">
+											<h6 class="mega-title">UI Components</h6>
+											<ul class="pro-body">
+												<li><a href="bc-menus.html" class="dropdown-item"><i class="fas fa-circle"></i> Menus</a></li>
+												<li><a href="bc-sliderscarousel.html" class="dropdown-item"><i class="fas fa-circle"></i> Media Sliders / Carousel</a></li>
+												<li><a href="bc-modals.html" class="dropdown-item"><i class="fas fa-circle"></i> Modals</a></li>
+												<li><a href="bc-pagination.html" class="dropdown-item"><i class="fas fa-circle"></i> Pagination</a></li>
+												<li><a href="bc-barsgraphs.html" class="dropdown-item"><i class="fas fa-circle"></i> Progress Bars & Graphs</a></li>
+												<li><a href="bc-searchbar.html" class="dropdown-item"><i class="fas fa-circle"></i> Search Bar</a></li>
+												<li><a href="bc-tabs.html" class="dropdown-item"><i class="fas fa-circle"></i> Tabs</a></li>
+												<li><a href="bc-toasts.html" class="dropdown-item"><i class="fas fa-circle"></i> Toasts</a></li>
+												<li><a href="bc-tooltips.html" class="dropdown-item"><i class="fas fa-circle"></i> Tooltips</a></li>
+												<li><a href="bc-uploadareas.html" class="dropdown-item"><i class="fas fa-circle"></i> Upload Areas</a></li>
+												<li><a href="bc-spinner.html" class="dropdown-item"><i class="fas fa-circle"></i> Spinner</a></li>
+											</ul>
+										</div>
+										<div class="col">
+											<h6 class="mega-title">Advance Components</h6>
+											<ul class="pro-body">
+												<li><a href="bc-advancedstats.html" class="dropdown-item"><i class="fas fa-circle"></i> Advanced Stats</a></li>
+												<li><a href="bc-advancedcards.html" class="dropdown-item"><i class="fas fa-circle"></i> Advanced Cards</a></li>
+												<li><a href="ac-lightbox.html" class="dropdown-item"><i class="fas fa-circle"></i> Lightbox</a></li>
+												<li><a href="ac-notification.html" class="dropdown-item"><i class="fas fa-circle"></i> Notification</a></li>
+												<li><a href="ac-pnotify.html" class="dropdown-item"><i class="fas fa-circle"></i> Pnotify</a></li>
+												<li><a href="ac-rating.html" class="dropdown-item"><i class="fas fa-circle"></i> Rating</a></li>
+												<li><a href="bc-sidebarforms.html" class="dropdown-item"><i class="fas fa-circle"></i> Sidebar Forms</a></li>
+												<li><a href="ac-sweetalert.html" class="dropdown-item"><i class="fas fa-circle"></i> Sweetalert</a></li>
+												<li><a href="ac-syn-highlighter.html" class="dropdown-item"><i class="fas fa-circle"></i> Syntax Highlighter</a></li>
+											</ul>
+
+										</div>
+										<div class="col">
+											<h6 class="mega-title">Forms</h6>
+											<ul class="pro-body">
+												<li><a href="bc-inputs.html" class="dropdown-item"><i class="fas fa-circle"></i> Inputs</a></li>
+												<li><a href="bc-selects.html" class="dropdown-item"><i class="fas fa-circle"></i> Selects</a></li>
+												<li><a href="bc-f-validation.html" class="dropdown-item"><i class="fas fa-circle"></i> Form Validation</a></li>
+												<li><a href="bc-f-masking.html" class="dropdown-item"><i class="fas fa-circle"></i> Form Masking</a></li>
+												<li><a href="bc-f-wizard.html" class="dropdown-item"><i class="fas fa-circle"></i> Form Wizard</a></li>
+												<li><a href="bc-f-picker.html" class="dropdown-item"><i class="fas fa-circle"></i> Form Picker</a></li>
+												<li><a href="bc-f-select.html" class="dropdown-item"><i class="fas fa-circle"></i> Form Select</a></li>
+											</ul>
+											<h6 class="mega-title mt-1">Extension</h6>
+											<ul class="pro-body">
+												<li><a href="page-editor.html" class="dropdown-item"><i class="fas fa-circle"></i> Editor</a></li>
+												<li><a href="page-image-croper.html" class="dropdown-item"><i class="fas fa-circle"></i> Image Cropper</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						
+							<li class="nav-item d-inline-block d-md-none">
+								<a href="#!" class="pop-search"><i class="feather icon-search"></i></a>
+								<div class="search-bar">
+									<div class="nav-search">
+				                        <div class="filter-block">
+											<input type="text" class="form-control input nav-search border-0 shadow-none" placeholder="Search" tabindex="-1" data-search="menu-list">
+				                            <ul class="link-list dropdown-menu"></ul>
+				                        </div>
+				                    </div>
+									<button type="button" class="close" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+							</li>
+							<li class="nav-item h-auto d-none d-md-inline-block">
+								<div class="input-group search-form">
+									<div class="nav-search">
+				                        <div class="filter-block">
+											<div class="input-group-prepend">
+												<span class="input-group-text bg-transparent"><i class="feather icon-search"></i></span>
+											</div>
+											<input type="text" class="form-control input nav-search" placeholder="Search" tabindex="-1" data-search="menu-list">
+				                            <ul class="link-list dropdown-menu"></ul>
+				                        </div>
+				                    </div>
+								</div>
+							</li>
+						
+					</ul>
+					<ul class="navbar-nav ml-auto">
+						<li>
+							<div class="dropdown">
+								<a class="dropdown-toggle" href="#" data-toggle="dropdown">
+									<i class="icon feather icon-bell"></i>
+									<span class="badge badge-circular badge-danger">5</span>
+								</a>
+								<div class="dropdown-menu dropdown-menu-right notification">
+									<ul class="noti-body">
+										<li class="n-title">
+											<p class="m-b-0">NEW</p>
+										</li>
+										<li class="notification">
+											<div class="media">
+												<img class="img-radius" src="theme/images/avatar-1.jpg" alt="Generic placeholder image">
+												<div class="media-body">
+													<p><strong>John Doe</strong><span class="n-time text-muted"><i class="icon feather icon-clock m-r-10"></i>5 min</span></p>
+													<p>New ticket Added</p>
+												</div>
+											</div>
+										</li>
+										<li class="n-title">
+											<p class="m-b-0">EARLIER</p>
+										</li>
+										<li class="notification">
+											<div class="media">
+												<img class="img-radius" src="theme/images/avatar-2.jpg" alt="Generic placeholder image">
+												<div class="media-body">
+													<p><strong>Joseph William</strong><span class="n-time text-muted"><i class="icon feather icon-clock m-r-10"></i>10 min</span></p>
+													<p>Prchace New Theme and make payment</p>
+												</div>
+											</div>
+										</li>
+										<li class="notification">
+											<div class="media">
+												<img class="img-radius" src="theme/images/avatar-1.jpg" alt="Generic placeholder image">
+												<div class="media-body">
+													<p><strong>Sara Soudein</strong><span class="n-time text-muted"><i class="icon feather icon-clock m-r-10"></i>12 min</span></p>
+													<p>currently login</p>
+												</div>
+											</div>
+										</li>
+										<li class="notification">
+											<div class="media">
+												<img class="img-radius" src="theme/images/avatar-2.jpg" alt="Generic placeholder image">
+												<div class="media-body">
+													<p><strong>Joseph William</strong><span class="n-time text-muted"><i class="icon feather icon-clock m-r-10"></i>30 min</span></p>
+													<p>Prchace New Theme and make payment</p>
+												</div>
+											</div>
+										</li>
+									</ul>
+									<div class="noti-footer">
+										<a href="#!">show all</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="dropdown drp-user">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+									<img src="theme/images/avatar-2.jpg" class="img-radius" alt="User-Profile-Image">
+								</a>
+								<div class="dropdown-menu dropdown-menu-right profile-notification">
+									<ul class="pro-body">
+										<li><a href="adm-profile-public.html" class="dropdown-item"><i class="feather icon-user"></i> Profile</a></li>
+										<li><a href="adm-profile-conversations.html" class="dropdown-item"><i class="feather icon-mail"></i> My Messages</a></li>
+										<li><a href="auth-login4.html" class="dropdown-item"><i class="feather icon-lock"></i> Lock Screen</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				
+			
+	</header>
+	<!-- [ Header ] end -->
+	
+	
+
+
+<!-- [ Main Content ] start -->
+<div class="pcoded-main-container">
+    <div class="pcoded-content container">
+        <!-- [ Main Content ] start -->
+        <div class="row">
+            <div class="col-sm-6">
+                <h2 class="font-weight-normal">Hi Ashoka, Welcome back!</h2>
+                <p>Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit donec sed odio dui.</p>
+                <div id="dashboarddatepicker1" class="form-control d-inline-block w-auto mb-4">
+                    <i class="feather icon-calendar"></i>&nbsp;
+                    <span></span> <i class="feather icon-chevron-down"></i>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <div id="opentask-taskchart1"></div>
+                                <h5 class="text-success">10.5%<i class="mr-2 ml-1 feather icon-arrow-up"></i><small class="text-body">Since last week</small></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <div id="opentask-taskchart2"></div>
+                                <h5 class="text-danger">10.5%<i class="mr-2 ml-1 feather icon-arrow-up"></i><small class="text-body">Since last week</small></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="font-weight-normal mb-4">Tasks by Team</h2>
+                        <div class="row align-items-center">
+                            <div class="col-md-4">
+                                <div id="taskfull-dashboard-chart1" class="my-2"></div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <p class="mb-3"><i class="fas fa-circle text-c-blue f-10 m-r-10"></i>Engineering <span class="float-right h6 mb-0 text-body">11</span></p>
+                                        <p class="mb-3"><i class="fas fa-circle text-c-green f-10 m-r-10"></i>Creative <span class="float-right h6 mb-0 text-body">7</span></p>
+                                        <p class="mb-3"><i class="fas fa-circle text-c-red f-10 m-r-10"></i>Finance <span class="float-right h6 mb-0 text-body">4</span></p>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <p class="mb-3"><i class="fas fa-circle text-c-yellow f-10 m-r-10"></i>Marketing <span class="float-right h6 mb-0 text-body">6</span></p>
+                                        <p class="mb-3"><i class="fas fa-circle text-c-purple f-10 m-r-10"></i>Product design <span class="float-right h6 mb-0 text-body">28</span></p>
+                                        <p class="mb-3"><i class="fas fa-circle text-c-red f-10 m-r-10"></i>User research <span class="float-right h6 mb-0 text-body">9</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="my-4">
+                        <div class="row align-items-center justify-content-between mb-4">
+                            <div class="col-auto">
+                                <h2 class="font-weight-normal mb-0">Weekly Variation</h2>
+                            </div>
+                            <div class="col-6">
+                                <div class="row justify-content-end d-none d-sm-flex">
+                                    <div class="col-auto">
+                                        <span class=""><i class="fas fa-circle text-danger f-10 m-r-5"></i>Overdue</span>
+                                    </div>
+                                    <div class="col-auto">
+                                        <span class=""><i class="fas fa-circle text-warning f-10 m-r-5"></i>Open</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 mb-3">
+                                <h6 class="text-body text-uppercase">Creative</h6>
+                                <div class="progress my-2">
+                                    <div class="progress-bar bg-warning" role="progressbar" style="width: 20%"></div>
+                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 15%"></div>
+                                </div>
+                                <p class="text-success d-inline-block mb-0">1.9%<i class="mr-2 ml-1 feather icon-arrow-up"></i></p>
+                                <p class="d-inline-block">Last 7 days</p>
+                            </div>
+                            <div class="col-sm-6 mb-3">
+                                <h6 class="text-body text-uppercase">Engineering</h6>
+                                <div class="progress my-2">
+                                    <div class="progress-bar bg-warning" role="progressbar" style="width: 20%"></div>
+                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 15%"></div>
+                                </div>
+                                <p class="text-success d-inline-block mb-0">1.9%<i class="mr-2 ml-1 feather icon-arrow-up"></i></p>
+                                <p class="d-inline-block">Last 7 days</p>
+                            </div>
+                            <div class="col-sm-6 mb-3">
+                                <h6 class="text-body text-uppercase">Finance</h6>
+                                <div class="progress my-2">
+                                    <div class="progress-bar bg-warning" role="progressbar" style="width: 20%"></div>
+                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 15%"></div>
+                                </div>
+                                <p class="text-success d-inline-block mb-0">1.9%<i class="mr-2 ml-1 feather icon-arrow-up"></i></p>
+                                <p class="d-inline-block">Last 7 days</p>
+                            </div>
+                            <div class="col-sm-6 mb-3">
+                                <h6 class="text-body text-uppercase">Marketing</h6>
+                                <div class="progress my-2">
+                                    <div class="progress-bar bg-warning" role="progressbar" style="width: 20%"></div>
+                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 15%"></div>
+                                </div>
+                                <p class="text-danger d-inline-block mb-0">9.3%<i class="mr-2 ml-1 feather icon-arrow-down"></i></p>
+                                <p class="d-inline-block">Last 7 days</p>
+                            </div>
+                            <div class="col-sm-6 mb-3">
+                                <h6 class="text-body text-uppercase">product design</h6>
+                                <div class="progress my-2">
+                                    <div class="progress-bar bg-warning" role="progressbar" style="width: 20%"></div>
+                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 15%"></div>
+                                </div>
+                                <p class="text-success d-inline-block mb-0">1.9%<i class="mr-2 ml-1 feather icon-arrow-up"></i></p>
+                                <p class="d-inline-block">Last 7 days</p>
+                            </div>
+                            <div class="col-sm-6 mb-3">
+                                <h6 class="text-body text-uppercase">uwer research</h6>
+                                <div class="progress my-2">
+                                    <div class="progress-bar bg-warning" role="progressbar" style="width: 20%"></div>
+                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 15%"></div>
+                                </div>
+                                <p class="text-danger d-inline-block mb-0">9.3%<i class="mr-2 ml-1 feather icon-arrow-down"></i></p>
+                                <p class="d-inline-block">Last 7 days</p>
+                            </div>
+                        </div>
+                        <hr class="my-4">
+                        <div class="text-center">
+                            <a href="#!" class="text-body">See all</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row align-items-center justify-content-between mb-4">
+                            <div class="col-auto">
+                                <h2 class="font-weight-normal mb-0">Weekly Variation</h2>
+                            </div>
+                            <div class="col-6">
+                                <div class="row justify-content-end d-none d-sm-flex">
+                                    <div class="col-auto">
+                                        <span class=""><i class="fas fa-circle text-danger f-10 m-r-5"></i>Overdue</span>
+                                    </div>
+                                    <div class="col-auto">
+                                        <span class=""><i class="fas fa-circle text-warning f-10 m-r-5"></i>Open</span>
+                                    </div>
+                                    <div class="col-auto">
+                                        <span class=""><i class="fas fa-circle text-success f-10 m-r-5"></i>Completed</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div id="dashboardtastbar4"></div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="p-4 border rounded">
+                                    <h1 class="display-4 d-inline-block font-weight-normal">16</h1>
+                                    <p class="text-danger d-inline-block mb-0">4.9%<i class="mr-2 ml-1 feather icon-arrow-down"></i></p>
+                                    <p class="text-uppercase">Overdue</p>
+                                    <div class="rounded bg-light p-3">
+                                        <div class="media align-items-center">
+                                            <i class="feather icon-alert-circle h2 mb-0"></i>
+                                            <div class="media-body ml-3">
+                                                Friday was the day with the most overdue tasks
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-5">
+                            <div class="col-sm-6">
+                                <div id="dashboardtastbar5"></div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="p-4 border rounded">
+                                    <h1 class="display-4 d-inline-block font-weight-normal">21</h1>
+                                    <p class="text-success d-inline-block mb-0">1.9%<i class="mr-2 ml-1 feather icon-arrow-up"></i></p>
+                                    <p class="text-uppercase">Overdue</p>
+                                    <div class="rounded bg-light p-3">
+                                        <div class="media align-items-center">
+                                            <i class="feather icon-alert-circle h2 mb-0"></i>
+                                            <div class="media-body ml-3">
+                                                Monday was the day with the most tasks open
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-5">
+                            <div class="col-sm-6">
+                                <div id="dashboardtastbar6"></div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="p-4 border rounded">
+                                    <h1 class="display-4 d-inline-block font-weight-normal">16</h1>
+                                    <p class="text-success d-inline-block mb-0">1.9%<i class="mr-2 ml-1 feather icon-arrow-up"></i></p>
+                                    <p class="text-uppercase">Overdue</p>
+                                    <div class="rounded bg-light p-3">
+                                        <div class="media align-items-center">
+                                            <i class="feather icon-alert-circle h2 mb-0"></i>
+                                            <div class="media-body ml-3">
+                                                Wednesday was the day with the most tasks completed
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row align-items-center justify-content-between">
+                            <div class="col-auto mb-2">
+                                <h2 class="font-weight-normal mb-0">Tasks by Project</h2>
+                            </div>
+                            <div class="col-auto mb-2">
+                                <div class="form-group float-right mb-0">
+                                    <div id="dashboardtaskreportrange2" class="form-control border-0">
+                                        <i class="feather icon-calendar"></i>&nbsp;
+                                        <span></span> <i class="feather icon-chevron-down"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="table table-borderless post-table table-center mb-0">
+                                <thead>
+                                    <tr>
+                                        <th>user name</th>
+                                        <th>Tasks</th>
+                                        <th class="w-25"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="media align-items-center">
+                                                <span class="avtar text-purple-2 bg-purple-1 avtar-xs  mr-3">PR</span>
+                                                <div class="media-body">
+                                                    <h6 class="mb-0 font-weight-normal">Leila Medina</h6>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            32 <span class="text-success"><i class="mr-1 ml-2 feather icon-arrow-up"></i>10</span>
+                                        </td>
+                                        <td>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-warning" role="progressbar" style="width: 80%"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="media align-items-center">
+                                                <span class="avtar text-yellow-2 bg-yellow-1 avtar-xs  mr-3">LO</span>
+                                                <div class="media-body">
+                                                    <h6 class="mb-0 font-weight-normal">Rose Morgan</h6>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            25 <span class="text-danger"><i class="mr-1 ml-2 feather icon-arrow-down"></i>2</span>
+                                        </td>
+                                        <td>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-warning" role="progressbar" style="width: 75%"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="media align-items-center">
+                                                <span class="avtar text-teal-2 bg-teal-1 avtar-xs  mr-3">HS</span>
+                                                <div class="media-body">
+                                                    <h6 class="mb-0 font-weight-normal">Carolyn Walker</h6>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            22 <span class="text-danger"><i class="mr-1 ml-2 feather icon-arrow-down"></i>3</span>
+                                        </td>
+                                        <td>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-warning" role="progressbar" style="width: 70%"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="media align-items-center">
+                                                <span class="avtar text-orange-2 bg-orange-1 avtar-xs  mr-3">AS</span>
+                                                <div class="media-body">
+                                                    <h6 class="mb-0 font-weight-normal">Susie Harvey</h6>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            19 <span class="text-success"><i class="mr-1 ml-2 feather icon-arrow-up"></i>4</span>
+                                        </td>
+                                        <td>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-warning" role="progressbar" style="width: 65%"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="media align-items-center">
+                                                <span class="avtar text-blue-2 bg-blue-1 avtar-xs  mr-3">DV</span>
+                                                <div class="media-body">
+                                                    <h6 class="mb-0 font-weight-normal">Jonathan Gutierrez</h6>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            14 <span class="text-danger"><i class="mr-1 ml-2 feather icon-arrow-down"></i>7</span>
+                                        </td>
+                                        <td>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-warning" role="progressbar" style="width: 60%"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="media align-items-center">
+                                                <span class="avtar text-red-2 bg-red-1 avtar-xs  mr-3">PA</span>
+                                                <div class="media-body">
+                                                    <h6 class="mb-0 font-weight-normal">Hannah Walsh</h6>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            8 <span class="text-success"><i class="mr-1 ml-2 feather icon-arrow-up"></i>2</span>
+                                        </td>
+                                        <td>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-warning" role="progressbar" style="width: 55%"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="font-weight-normal">Tasks by Project</h3>
+                        <div id="taskfull-dashboard-chart2" class="mb-4 mt-5"></div>
+                        <div>
+                            <p class="mb-3"><i class="fas fa-circle text-c-blue f-10 m-r-10"></i>Incoming requests <span class="float-right h6 mb-0 text-body">11</span></p>
+                            <p class="mb-3"><i class="fas fa-circle text-c-green f-10 m-r-10"></i>You have 2 pending requests.. <span class="float-right h6 mb-0 text-body">7</span></p>
+                            <p class="mb-3"><i class="fas fa-circle text-c-red f-10 m-r-10"></i>You have 3 pending tasks <span class="float-right h6 mb-0 text-body">4</span></p>
+                            <p class="mb-3"><i class="fas fa-circle text-c-yellow f-10 m-r-10"></i>New order received <span class="float-right h6 mb-0 text-body">6</span></p>
+                            <p class="mb-3"><i class="fas fa-circle text-c-purple f-10 m-r-10"></i>Incoming requests <span class="float-right h6 mb-0 text-body">28</span></p>
+                            <p class="mb-3"><i class="fas fa-circle text-c-red f-10 m-r-10"></i>You have 4 pending tasks <span class="float-right h6 mb-0 text-body">9</span></p>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="mb-4">MY Activity</h3>
+                <div class="media align-items-center mb-4">
+                    <img src="theme/images/avatar-2.jpg" alt="images" class="img-fluid avtar avtar-xs">
+                    <div class="media-body ml-3 align-self-center">
+                        <h6 class="mb-0 d-inline-block">Luke S. </h6>
+                        <p class="mb-0 d-inline-block"> 3 min ago</p>
+                        <p class="mt-1 mb-0">Created task <span class="text-primary">Nulla vitae elit libero a pharetra.</span></p>
+                    </div>
+                </div>
+                <div class="media align-items-center mb-4">
+                    <img src="theme/images/avatar-3.jpg" alt="images" class="img-fluid avtar avtar-xs">
+                    <div class="media-body ml-3 align-self-center">
+                        <h6 class="mb-0 d-inline-block">Luke S. </h6>
+                        <p class="mb-0 d-inline-block"> 5 min ago</p>
+                        <p class="mt-1 mb-0">Completed task <span class="text-primary">Cantapibus dolor at ace</span></p>
+                    </div>
+                </div>
+                <div class="media align-items-center mb-4">
+                    <img src="theme/images/avatar-1.jpg" alt="images" class="img-fluid avtar avtar-xs">
+                    <div class="media-body ml-3 align-self-center">
+                        <h6 class="mb-0 d-inline-block">Luke S. </h6>
+                        <p class="mb-0 d-inline-block"> 6 min ago</p>
+                        <p class="mt-1 mb-0">Invite <span class="text-primary">Ashoka T.</span> to <span class="text-primary">Revamp Design System</span></p>
+                    </div>
+                </div>
+                <div class="media align-items-center mb-4">
+                    <img src="theme/images/avatar-2.jpg" alt="images" class="img-fluid avtar avtar-xs">
+                    <div class="media-body ml-3 align-self-center">
+                        <h6 class="mb-0 d-inline-block">Luke S. </h6>
+                        <p class="mb-0 d-inline-block"> 8 min ago</p>
+                        <p class="mt-1 mb-0">Created task <span class="text-primary">Nulla vitae elit libero a pharetra.</span></p>
+                    </div>
+                </div>
+                <div class="media align-items-center mb-4">
+                    <img src="theme/images/avatar-3.jpg" alt="images" class="img-fluid avtar avtar-xs">
+                    <div class="media-body ml-3 align-self-center">
+                        <h6 class="mb-0 d-inline-block">Luke S. </h6>
+                        <p class="mb-0 d-inline-block"> 10 min ago</p>
+                        <p class="mt-1 mb-0">Completed task <span class="text-primary">Cantapibus dolor at ace</span></p>
+                    </div>
+                </div>
+                <div class="media align-items-center mb-4">
+                    <img src="theme/images/avatar-1.jpg" alt="images" class="img-fluid avtar avtar-xs">
+                    <div class="media-body ml-3 align-self-center">
+                        <h6 class="mb-0 d-inline-block">Luke S. </h6>
+                        <p class="mb-0 d-inline-block"> 12 min ago</p>
+                        <p class="mt-1 mb-0">Invite <span class="text-primary">Ashoka T.</span> to <span class="text-primary">Revamp Design System</span></p>
+                    </div>
+                </div>
+                <hr>
+                <div class="text-center">
+                    <a href="#!" class="text-body">See all</a>
+                </div>
+            </div>
+        </div>
+        <!-- [ Main Content ] end -->
+    </div>
+</div>
+
+    <!-- Warning Section start -->
+    <!-- Older IE warning message -->
+    <!--[if lt IE 11]>
+        <div class="ie-warning">
+            <h1>Warning!!</h1>
+            <p>You are using an outdated version of Internet Explorer, please upgrade
+               <br/>to any of the following web browsers to access this website.
+            </p>
+            <div class="iew-container">
+                <ul class="iew-download">
+                    <li>
+                        <a href="http://www.google.com/chrome/">
+                            <img src="assets/images/browser/chrome.png" alt="Chrome">
+                            <div>Chrome</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.mozilla.org/en-US/firefox/new/">
+                            <img src="assets/images/browser/firefox.png" alt="Firefox">
+                            <div>Firefox</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.opera.com">
+                            <img src="assets/images/browser/opera.png" alt="Opera">
+                            <div>Opera</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.apple.com/safari/">
+                            <img src="assets/images/browser/safari.png" alt="Safari">
+                            <div>Safari</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">
+                            <img src="assets/images/browser/ie.png" alt="">
+                            <div>IE (11 & above)</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <p>Sorry for the inconvenience!</p>
+        </div>
+    <![endif]-->
+    <!-- Warning Section Ends -->
+
+    <!-- Required Js -->
+    
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="theme/js/bootstrap.min.js"></script>
+    <script src="theme/js/pcoded.min.js"></script>
+    <script src="theme/js/menu-setting.js"></script>
+
+<script src="theme/js/apexcharts.min.js"></script>
+<script src="theme/js/moment.min.js"></script>
+<script src="theme/js/daterangepicker.js"></script>
+<script>
+    $(function() {
+        $(function() {
+            var start = moment().subtract(29, 'days');
+            var end = moment();
+
+            function cb(start, end) {
+                $('#dashboardtaskreportrange2 span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
+            }
+            $('#dashboardtaskreportrange2').daterangepicker({
+                startDate: start,
+                endDate: end,
+                ranges: {
+                    'Today': [moment(), moment()],
+                    'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+                    'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+                    'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+                    'This Month': [moment().startOf('month'), moment().endOf('month')],
+                    'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+                }
+            }, cb);
+            cb(start, end);
+        });
+    });
+    $(function() {
+        var options = {
+            chart: {
+                height: 220,
+                type: 'bar',
+                stacked: true,
+                toolbar: {
+                    show: false,
+                }
+            },
+            plotOptions: {
+                bar: {
+                    horizontal: false,
+                    columnWidth: '30%',
+                    endingShape: 'rounded'
+                },
+            },
+            colors: ['#2DCA73', '#d7dfe9'],
+            series: [{
+                name: 'PRODUCT A',
+                data: [10, 12, 15, 10, 8]
+            }, {
+                name: 'PRODUCT B',
+                data: [18, 16, 13, 18, 20]
+            }],
+            dataLabels: {
+                enabled: false,
+            },
+            xaxis: {
+                categories: ['MON', 'Tue', 'Wed', 'Thu', 'Fri'],
+                axisBorder: {
+                    show: false,
+                },
+                axisTicks: {
+                    show: false,
+                }
+            },
+            grid: {
+                show: false,
+            },
+            yaxis: {
+                show: false,
+            },
+            legend: {
+                show: false,
+            },
+            fill: {
+                opacity: 1
+            },
+        }
+        var chart = new ApexCharts(document.querySelector("#dashboardtastbar6"), options);
+        chart.render();
+    });
+    $(function() {
+        var options = {
+            chart: {
+                height: 220,
+                type: 'bar',
+                stacked: true,
+                toolbar: {
+                    show: false,
+                }
+            },
+            plotOptions: {
+                bar: {
+                    horizontal: false,
+                    columnWidth: '30%',
+                    endingShape: 'rounded'
+                },
+            },
+            colors: ['#FFB800', '#d7dfe9'],
+            series: [{
+                name: 'PRODUCT A',
+                data: [8, 10, 12, 15, 10]
+            }, {
+                name: 'PRODUCT B',
+                data: [20, 18, 16, 13, 18]
+            }],
+            dataLabels: {
+                enabled: false,
+            },
+            xaxis: {
+                categories: ['MON', 'Tue', 'Wed', 'Thu', 'Fri'],
+                axisBorder: {
+                    show: false,
+                },
+                axisTicks: {
+                    show: false,
+                }
+            },
+            grid: {
+                show: false,
+            },
+            yaxis: {
+                show: false,
+            },
+            legend: {
+                show: false,
+            },
+            fill: {
+                opacity: 1
+            },
+        }
+        var chart = new ApexCharts(document.querySelector("#dashboardtastbar5"), options);
+        chart.render();
+    });
+    $(function() {
+        var options = {
+            chart: {
+                height: 220,
+                type: 'bar',
+                stacked: true,
+                toolbar: {
+                    show: false,
+                }
+            },
+            plotOptions: {
+                bar: {
+                    horizontal: false,
+                    columnWidth: '30%',
+                    endingShape: 'rounded'
+                },
+            },
+            colors: ['#FF0B37', '#FFB800', '#d7dfe9'],
+            series: [{
+                name: 'PRODUCT A',
+                data: [13, 13, 13, 13, 13]
+            }, {
+                name: 'PRODUCT B',
+                data: [15, 15, 15, 15, 15]
+            }, {
+                name: 'PRODUCT c',
+                data: [20, 20, 20, 20, 20]
+            }],
+            dataLabels: {
+                enabled: false,
+            },
+            xaxis: {
+                categories: ['MON', 'Tue', 'Wed', 'Thu', 'Fri'],
+                axisBorder: {
+                    show: false,
+                },
+                axisTicks: {
+                    show: false,
+                }
+            },
+            grid: {
+                show: false,
+            },
+            yaxis: {
+                show: false,
+            },
+            legend: {
+                show: false,
+            },
+            fill: {
+                opacity: 1
+            },
+        }
+        var chart = new ApexCharts(document.querySelector("#dashboardtastbar4"), options);
+        chart.render();
+    });
+    $(function() {
+        var options = {
+            chart: {
+                height: 200,
+                type: 'donut',
+                sparkline: {
+                    enabled: true
+                },
+            },
+            series: [44, 55, 41, 17, 15],
+            colors: ["#4680ff", "#0e9e4a", "#00acc1", "#ffa21d", "#ff5252"],
+            legend: {
+                show: false,
+            },
+            plotOptions: {
+                pie: {
+                    donut: {
+                        size: '85%',
+                        labels: {
+                            show: true,
+                            name: {
+                                show: true
+                            },
+                            value: {
+                                show: true
+                            }
+                        }
+                    }
+                }
+            },
+            dataLabels: {
+                enabled: false
+            },
+        }
+        var chart = new ApexCharts(document.querySelector("#taskfull-dashboard-chart2"), options);
+        chart.render();
+    });
+    $(function() {
+        var options = {
+            chart: {
+                height: 200,
+                type: 'donut',
+                sparkline: {
+                    enabled: true
+                },
+            },
+            series: [44, 55, 41, 17, 15],
+            colors: ["#4680ff", "#0e9e4a", "#00acc1", "#ffa21d", "#ff5252"],
+            legend: {
+                show: false,
+            },
+            plotOptions: {
+                pie: {
+                    donut: {
+                        size: '85%',
+                        labels: {
+                            show: true,
+                            name: {
+                                show: true
+                            },
+                            value: {
+                                show: true
+                            }
+                        }
+                    }
+                }
+            },
+            dataLabels: {
+                enabled: false
+            },
+        }
+        var chart = new ApexCharts(document.querySelector("#taskfull-dashboard-chart1"), options);
+        chart.render();
+    });
+    $(function() {
+        var options = {
+            chart: {
+                type: 'radialBar',
+                offsetY: -20,
+                sparkline: {
+                    enabled: true
+                },
+            },
+            plotOptions: {
+                radialBar: {
+                    startAngle: -90,
+                    endAngle: 90,
+                    track: {
+                        background: "#D7DFE9",
+                        strokeWidth: '97%',
+                        margin: 5, // margin is in pixels
+                        shadow: {
+                            enabled: true,
+                            top: 2,
+                            left: 0,
+                            color: '#999',
+                            opacity: 1,
+                            blur: 2
+                        }
+                    },
+                    dataLabels: {
+                        value: {
+                            offsetY: -40,
+                            fontSize: '22px'
+                        }
+                    }
+                }
+            },
+            colors: ['#FFB800'],
+            fill: {
+                type: 'solid',
+            },
+            series: [65],
+            labels: ['open tasks'],
+        }
+        var chart = new ApexCharts(document.querySelector("#opentask-taskchart1"), options);
+        chart.render();
+    });
+    $(function() {
+        var options = {
+            chart: {
+                type: 'radialBar',
+                offsetY: -20,
+                sparkline: {
+                    enabled: true
+                },
+            },
+            plotOptions: {
+                radialBar: {
+                    startAngle: -90,
+                    endAngle: 90,
+                    track: {
+                        background: "#D7DFE9",
+                        strokeWidth: '97%',
+                        margin: 5, // margin is in pixels
+                        shadow: {
+                            enabled: true,
+                            top: 2,
+                            left: 0,
+                            color: '#999',
+                            opacity: 1,
+                            blur: 2
+                        }
+                    },
+                    dataLabels: {
+                        value: {
+                            offsetY: -40,
+                            fontSize: '22px'
+                        }
+                    }
+                }
+            },
+            colors: ['#ff0b37'],
+            fill: {
+                type: 'solid',
+            },
+            series: [65],
+            labels: ['overdue tasks'],
+        }
+        var chart = new ApexCharts(document.querySelector("#opentask-taskchart2"), options);
+        chart.render();
+    });
+    $(function() {
+        var start = moment().subtract(29, 'days');
+        var end = moment();
+
+        function cb(start, end) {
+            $('#dashboarddatepicker1 span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
+        }
+        $('#dashboarddatepicker1').daterangepicker({
+            startDate: start,
+            endDate: end,
+            ranges: {
+                'Today': [moment(), moment()],
+                'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+                'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+                'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+                'This Month': [moment().startOf('month'), moment().endOf('month')],
+                'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+            }
+        }, cb);
+        cb(start, end);
+    });
+</script>
+
+
+</body>
+
+</html>
